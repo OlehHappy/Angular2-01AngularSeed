@@ -26,11 +26,12 @@ System.register(['angular2/core', './courses.component', './authors.component'],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
+                    this.title = "Angular App";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'my-app',
-                        template: "\n        <h1>Hello Angular 2</h1>\n        <courses></courses>\n        <authors></authors>\n      ",
+                        template: "\n        <h1>{{title}}</h1>\n        <courses></courses>\n        <authors></authors>\n\n      ",
                         directives: [courses_component_1.CoursesComponent, authors_component_1.AuthorsComponent]
                     }), 
                     __metadata('design:paramtypes', [])

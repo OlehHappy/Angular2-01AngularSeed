@@ -5,10 +5,15 @@ import {AuthorsComponent} from './authors.component';
 @Component({
     selector: 'my-app',
     template: `
-        <h1>Hello Angular 2</h1>
+        <h1>{{title}}</h1>
         <courses></courses>
         <authors></authors>
+
       `,
     directives: [CoursesComponent, AuthorsComponent]
 })
-export class AppComponent { }
+// <button class="btn btn-primary" [class.active="isActive"]>Submit</button>
+export class AppComponent {
+    title = "Angular App";
+    // isActive = true;
+}
